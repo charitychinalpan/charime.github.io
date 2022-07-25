@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Charity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html {scroll-behavior: smooth;}
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-blue, .w3-hover-blue:hover{color:rgb(34, 21, 3)!important;background-color:rgb(255, 202, 172)!important}
+    .w3-row-padding img {margin-bottom: 12px}
+    #about p{color:rgb(34, 21, 3)!important;}
+    h2{color:rgb(24, 14, 0);}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px;}
+    #myNavbar{background-color: rgb(34, 21, 3); color:rgb(255, 202, 172);}
+    a{text-decoration: none;}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    #avatar {animation: float 6s ease-in-out infinite; border: 5px white solid; box-sizing: border-box;}
+    @keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    }
+    .w3-third img{
+      border-radius: 10px;
+      transition: transform .2s;
+    }
+    .w3-third img:hover {
+      -ms-transform: scale(1.01); /* IE 9 */
+      -webkit-transform: scale(1.01); /* Safari 3-8 */
+      transform: scale(1.01); 
+    }
+    #nav a:hover{background-color:rgb(255, 202, 172)!important; color:rgb(34, 21, 3)!important;}
+    .active{background-color:rgb(255, 202, 172)!important; color:rgb(34, 21, 3)!important;}
+    </style>
+  </head>
+<body class="w3-blue">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav id = "nav" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="background-color: rgb(34, 21, 3); color:rgb(255, 202, 172);">
+  <!-- Avatar image in top left corner -->
+  <img src="images/avatar.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large active">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <br/><br/>HOME
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <br/><br/>ABOUT
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <br/><br/>PROJECTS
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <br/><br/>CONTACT
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" style="background-color: rgb(34, 21, 3); color:rgb(255, 202, 172);">
+  <div id="nav">
+    <div class="w3-bar w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item active" style="width:25% !important;">HOME</a>
+      <a href="#about" class="w3-bar-item" style="width:25% !important">ABOUT</a>
+      <a href="#projects" class="w3-bar-item" style="width:25% !important">PROJECTS</a>
+      <a href="#contact" class="w3-bar-item" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-50 w3-center w3-blue" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Charity.</h1>
+    <p>Aspiring Front-end Web Designer and Graphic Designer</p><br/>
+    <img src="images/ME.png" alt="boy" class="w3-image" id = "avatar" width="200" height="200" style="box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6); border-radius: 100%;"> 
+    <br/>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" >
+        <a target = "_blank" href= "https://drive.google.com/file/d/1qhXDPu424MrGX7_VIoca85gsIKvdgQH7/view?usp=sharing" download ="charity_cv" style="text-decoration: none;"><i class="fa fa-download"></i> Download Resume</a>
+    </button>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2>Charity F. Chinalpan</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>My name is Charity Fodad Chinalpan. I'm a student under Bachelor of Computer Science and I enjoy working on front-end websites and graphic designs during my leisure time. 
+        I'm still in the latter stages of my study and I am currently an intern at the Public Employment Service Office(PESO) as an encoder.
+        Though, I'm constantly learning and researching to be a better and more effective front-end developer and graphic designer.</p> 
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2>Graphic Designs</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px" id="canva">
+      <div class="w3-third">
+        <img src="images/1.png" style="width:100%">
+        <img src="images/2a.png" style="width:100%">
+        <img src="images/2b.png" style="width:100%">
+      </div>
+
+      <div class="w3-third">
+        <img src="images/3.png" style="width:100%">
+        <img src="images/4.png" style="width:100%">
+        <img src="images/5.png" style="width:100%">
+      </div>
+      <div class="w3-third">
+        <img src="images/6.png" style="width:100%">
+        <img src="images/7.png" style="width:100%">
+        <img src="images/8.png" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2>Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker w3-text-brown w3-xxlarge w3-margin-right"></i> Sadanga, Mountain Province</p>
+      <p><i class="fa fa-phone w3-text-brown w3-xxlarge w3-margin-right"></i> Phone: +639272680639</p>
+      <p><i class="fa fa-envelope w3-text-brown w3-xxlarge w3-margin-right"> </i> Email: charitychinalpan26@gmail.com</p>
+      <br/>
+      <a href="https://www.facebook.com/chari.chinalpan/" target=”_blank”><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/charity-chinalpan-941b47226/" target=”_blank”><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+
+
+<!-- END PAGE CONTENT -->
+</div>
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("nav");
+  var btns = header.getElementsByClassName("w3-bar-item");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
+
+</body>
+</html>
